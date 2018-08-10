@@ -1,8 +1,8 @@
 # Using netstat and powershell on windows to learn more about what processes are communicating with the outside world.
 
 ## How to check what ports are open?
-QUESTION: What is the different between NMAP and netstat?
-QUESTION: What is your local address? What does it represent?
+QUESTION: What is the different between NMAP and netstat?  
+QUESTION: What is your local address? What does it represent?  
 Open a command line prompt. Type `netstat`
 What IP address are they communicating with?
 What port are they communicating with?
@@ -31,7 +31,7 @@ Once you have the name of the process you can get the exe file path and other in
 To get more info about a process using image name:
 `tasklist /FI "ImageName eq Spring.Tests.exe" /v /fo List`
 
-To get where the executable is located: 
+To get where the executable is located:
 `wmic process where "name='mysqld.exe'" get ProcessID, ExecutablePath`
 
 Check out where I got my info and to read more: [link](https://superuser.com/questions/768984/show-exe-file-path-of-running-processes-on-the-command-line-in-windows)
